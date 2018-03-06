@@ -1,0 +1,115 @@
+.header{
+	height: 100px;
+	background-color: #9fa8a3;
+}
+
+.left{
+	background-color: #c0dfd9;
+}
+.main{
+	background-color: #e3e0cf;
+}
+.right{
+	background-color: #b3c2bf;
+}
+
+.footer{
+	height: 100px;
+	background-color: #3b3a36;
+}
+
+.header,
+.container,
+.footer{
+	margin: 10px auto;
+}
+
+.header,
+.container,
+.footer{
+	text-align: center;
+}
+
+/*For screen not wider than 960px*/
+@media screen and (min-width: 960px){
+	.header,
+	.container,
+	.footer{
+		width: 960px;
+	}
+
+
+	.container{
+		height: 500px;
+	}
+
+	.left,
+	.main,
+	.right{
+		float: left;
+		height: 500px;
+	}
+
+	.left,
+	.right{
+		width: 200px;
+	}
+
+	.main{
+		margin-left: 5px;
+		margin-right: 5px;
+		width: 550px;
+	}
+}
+
+/*For screen wider than 600px but narrower than 960px*/
+@media screen and (min-width: 600px) and (max-width: 960px){
+	.header,
+	.container,
+	.footer{
+		width: 600px;
+	}
+
+	.container{
+		height: 400px;
+	}
+
+	.left,
+	.main,
+	.right{
+		float: left;
+		height: 400px;
+	}
+
+	.left{
+		width: 160px;
+	}
+
+	.main{
+		margin-left: 5px;
+		width: 435px;
+	}
+
+	.right{
+		display: none;
+	}
+}
+
+/*For screen narrower than 500px*/
+@media screen and (max-width: 600px){
+	.header,
+	.container,
+	.footer{
+		width: 400px;
+	}
+
+	.container{
+		height: 300px;
+	}
+
+	.left,
+	.main,
+	.right{
+		height: 100px;
+	}
+}
